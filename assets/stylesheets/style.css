@@ -53,9 +53,24 @@ body {
 	background-size: cover;
 }
 
+
+/* grand parent */
+.grand-parant {
+	width: 900px;
+	min-height: 500px;
+	margin: 0 auto;
+	padding: 52px;
+}
+.stopwatch {
+	width: 400px;
+	padding-top: 50px; 
+	float: right;
+}
+/* content  */
 .content {
-	max-width:700px;
-	margin:60px auto;
+	/* float: left; */
+	max-width:400px;
+	/* margin:70px auto; */
 	background:white;
 	border-radius:4px;
 	box-shadow:10px 10px 0 rgba(0,0,0,0.1);
@@ -65,7 +80,7 @@ body {
 	line-height:3rem;
 }
 p {
-	margin: 0 0 3rem;
+	margin: 0 0 1rem;
 }
 
 .content:before {
@@ -73,8 +88,23 @@ p {
 	position: absolute;
 	width: 4px;
 	top: 0;
-	left: 30px;
+	left: 20px;
 	bottom: 0;
 	border: 1px solid;
 	border-color: transparent #efe4e4;
 }
+
+
+/* stopwatch */
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
